@@ -1,12 +1,10 @@
 // This function takes an element and scrolls the window so the element appears on top of the viewport
-(function ($) {
-    $.fn.goTo = function () {
-        $('html, body').animate({
-            scrollTop: $(this).offset().top + 'px'
-        }, 'fast');
-        return this; 
-    };
-})(jQuery);
+$.fn.goTo = function () {
+    $('html, body').animate({
+        scrollTop: $(this).offset().top + 'px'
+    }, 'fast');
+    return this; 
+};
 
 // This function takes an element and returns true/false if the entire element is in the current viewport
 $.fn.isFullyInViewport = function () {
