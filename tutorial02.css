@@ -1,0 +1,38 @@
+#nav {
+    position: fixed; /* Keep nav at top of viewport */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #444;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+#navHeader {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+#navLinksContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contentLink, .contentLink:hover {
+    color: #444;
+    cursor: pointer;
+    width: 25%; /* 25% because I have created 4 links */
+    text-decoration: none;
+}
+
+    .contentLink.active { /* Add styling when active class gets added to a content link */
+        color: #ca2c92; 
+        border-bottom: 3px solid #ca2c92;
+    }
+    
+.content {
+    margin: 40px 0;
+    height: 400px; /* Add temporary height while elements are empty */
+}
